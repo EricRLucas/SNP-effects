@@ -78,7 +78,7 @@ extract.gene.info <- function(agap.number, gff.table, isoform = 'A'){
 	     full.aa.list = sapply(full.aa.list, as.character))
 }
 
-# Write a function that will assess the relevance of a SNP, given it's genomic position
+# Write a function that will assess the relevance of a SNP, given its genomic position
 assess.SNP <- function(snp, gene.data){
 	snp.id <- strsplit(snp, ':')[[1]]
 	genome.position <- snp.id[2]
